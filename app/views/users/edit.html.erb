@@ -1,0 +1,9 @@
+<%= render "form", user: @user %>
+
+<br>
+
+<div>
+  <%= link_to "Show", @user, class:"btn btn-secondary" %>
+  <%= link_to 'Delete', @user, method: :delete, data: { "turbo-method": :delete, confirm: 'Are you sure?' }, class: "btn btn-danger" %>
+  <%= link_to "Back", users_path, class:"btn btn-dark" %>
+</div>
